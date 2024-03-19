@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net7.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Common\Common.csproj" />
+      <ProjectReference Include="..\NSG.Common.Wpf\NSG.Common.Wpf.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Veldrid.SceneGraph" Version="0.4.9-alpha0694" />
+      <PackageReference Include="Veldrid.SceneGraph.Manipulators" Version="0.4.9-alpha0694" />
+      <PackageReference Include="Veldrid.SceneGraph.Wpf" Version="0.4.9-alpha0694" />
+    </ItemGroup>
+
+</Project>

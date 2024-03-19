@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Veldrid.SceneGraph" Version="0.4.9-alpha0694"/>
+        <PackageReference Include="Veldrid.SceneGraph.Manipulators" Version="0.4.9-alpha0694"/>
+        <PackageReference Include="Veldrid.SceneGraph.Wpf" Version="0.4.9-alpha0694"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\NSG.Common.Wpf\NSG.Common.Wpf.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Assets\Shaders\LargeSphereCount-fragment.glsl" />
+      <EmbeddedResource Include="Assets\Shaders\LargeSphereCount-vertex.glsl" />
+      <EmbeddedResource Include="Assets\Shaders\ProceduralVolumeShader-fragment.glsl" />
+      <EmbeddedResource Include="Assets\Shaders\ProceduralVolumeShader-vertex.glsl" />
+      <EmbeddedResource Include="Assets\Shaders\TextureVolumeShader-fragment.glsl" />
+    </ItemGroup>
+
+</Project>
